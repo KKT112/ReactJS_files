@@ -1,15 +1,9 @@
 import { useState } from "react";
 
-
+//object example
 interface cmd{
   f_name:string;
   l_name:string;
-}
-
-function metadata2 (para1:number,para2:number){
-  return para1+para2;
-
-
 }
 
 const OBJ:cmd = {
@@ -17,8 +11,20 @@ const OBJ:cmd = {
   l_name :"tank"
 }
 
+//function exaple
+ 
+function metadata2 (para1:number,para2:number){
+  return para1+para2;
+}
+
+//variable use in typescript
+
+
 const names: string = "kkt";
 const age: number = 20;
+
+
+//counter useing hooks
 
 function Data() {
 
@@ -35,12 +41,15 @@ function Data() {
         setCounter(counter-1);
       }
     }
-    
-   
+
+    //property in react js(props)
+
+
     
     return(
       
       <>
+          
           <h1>React hooks</h1>
           <h2>butoon value : {counter}</h2>
           <button onClick={Add}>Add</button>
@@ -56,5 +65,7 @@ function Data() {
 
 
 export default Data;
+
+
 
 
