@@ -1,0 +1,213 @@
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: bolder;
+    src:  url('../assest/fonts/Poppins-ExtraBold.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: bold;
+    src:  url('../assest/fonts/Poppins-Bold.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    src:  url('../assest/fonts/Poppins-SemiBold.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    src:  url('../assest/fonts/Poppins-Medium.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    src:  url('../assest/fonts/Poppins-Regular.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    src:  url('../assest/fonts/Poppins-Thin.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 100;
+    src:  url('../assest/fonts/Poppins-ExtraLight.ttf') format('truetype');
+  }
+  
+
+
+
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+.second img {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.9;
+}
+
+.second {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+.text {
+  position: absolute;
+  height: 30px;
+  margin-left: -60rem;
+  margin-top: 40px;
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 4px;
+  position: fixed;
+}
+.navbar {
+  position: absolute;
+  margin: 40px;
+}
+.btn {
+  background: none;
+  color: white;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.navbar ul {
+  position: absolute;
+  display: flex;
+  gap: 40px;
+}
+
+.navbar ul li {
+  list-style: none;
+}
+
+.navbar ul li:hover {
+  transform: scalex(1.1);
+  letter-spacing: 2px;
+  border-radius: 10px;
+  border: 1px solid white;
+  padding: 5px;
+}
+
+.box {
+  position: absolute;
+  margin-top: 30vh;
+  height: 55vh;
+  width: 50vh;
+  border: 3px solid white;
+  box-shadow: 6px 6px 6px 6px white;
+  padding: 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+}
+
+.login {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 25px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+input{
+  width: 90%;
+  padding: 7px;
+  background: none;
+  border: none;
+  border-bottom: 3px solid white;
+  color: white;
+  margin: 20px;
+}
+input::placeholder{
+  
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+input:focus{
+  border: none;
+}
+.lower{
+  display: flex;
+  gap: 30px;
+  font-size: 17PX;
+}
+.forget{
+  background:none;
+  border: none;
+  cursor: pointer;
+}
+
+
+.btn-2{
+    margin: 7px;
+    color: white;
+    background: none;
+    background-color: black;
+    padding-left: 15vh;
+    padding-right: 15vh;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 20px;
+    padding-block:3px ;
+}
+
+
+
+/* Add to Navbar.css */
+@media (max-width: 768px) {
+
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 2px;
+  }
+   
+  .navbar ul li {
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    font-size: 10px;
+  }
+  .text{
+    margin:0;
+    
+    width: 300px;
+    
+    
+
+  }
+  .box{
+    position: none;
+    width: 40vh;
+    height:55vh;
+  }
+}

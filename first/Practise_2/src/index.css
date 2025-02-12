@@ -1,0 +1,23 @@
+.main-contain{
+    margin-bottom:30px;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+}
+.main{
+    display: flex;
+    flex-direction: row;
+   
+
+}
+.sub{
+    height: 40px;
+    width: 49px;
+    border: 2px solid black;
+    margin: 30px;
+    text-align: center;
+    justify-content: center;
+
+}
